@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            padding: 30px;
+        }
+
+        .container{
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group{
+            margin-bottom: 10px;
+        }
+
+        input{
+            padding: 8px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button{
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .add-btn{
+            background-color: #28a745;
+        }
+
+        .update-btn{
+            background-color: #ffc107;
+            color: black;
+        }
+
+        .delete-btn{
+            background-color: #dc3545;
+        }
+
+        button:hover{
+            opacity: 0.8;
+        }
+
+        table{
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th{
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+        }
+
+        td{
+            padding: 8px;
+            text-align: center;
+        }
+
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Item Management</h1>
+
+    <div class="form-group">
+        <label>Id :</label>
+        <input id="itemid">
+    </div>
+
+    <div class="form-group">
+        <label>Name :</label>
+        <input id="itemname">
+    </div>
+
+    <div class="form-group">
+        <label>Item Qty :</label>
+        <input id="itemqty">
+    </div>
+
+    <div class="form-group">
+        <label>Buy Price :</label>
+        <input id="itembuyprice">
+    </div>
+
+    <div class="form-group">
+        <label>Sell Price :</label>
+        <input id="itemsellprice">
+    </div>
+
+    <br>
+
+    <button id="addBtn" class="add-btn">Add Item</button>
+    <button id="updateBtn" class="update-btn">Update Item</button>
+    <button id="deleteBtn" class="delete-btn">Delete Item</button>
+
+
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>QTY</th>
+            <th>Buy Price</th>
+            <th>Sell Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+</div>
+
+<script src="../js/jquery-3.7.1min.js"></script>
+<script src="../js/item.js"></script>
+</body>
+</html>

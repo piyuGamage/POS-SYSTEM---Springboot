@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer</title>
+
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            padding: 30px;
+        }
+
+        .container{
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 70%;
+            margin: auto;
+        }
+
+        h1{
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group{
+            margin-bottom: 15px;
+        }
+
+        input{
+            padding: 8px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        button{
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .add-btn{
+            background-color: #28a745;
+        }
+
+        .update-btn{
+            background-color: #ffc107;
+            color: black;
+        }
+
+        .delete-btn{
+            background-color: #dc3545;
+        }
+
+        button:hover{
+            opacity: 0.85;
+        }
+
+        table{
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            overflow: hidden;
+        }
+
+        th{
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+        }
+
+        td{
+            padding: 8px;
+            text-align: center;
+        }
+
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+
+        tr:hover{
+            background-color: #e6f0ff;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Customer Management</h1>
+
+    <div class="form-group">
+        <label>Id :</label>
+        <input id="customerid">
+    </div>
+
+    <div class="form-group">
+        <label>Name :</label>
+        <input id="customername">
+    </div>
+
+    <div class="form-group">
+        <label>Address :</label>
+        <input id="customeraddress">
+    </div>
+
+    <div class="form-group">
+        <label>Phone Number :</label>
+        <input id="customerphonenumber">
+    </div>
+
+    <br>
+
+    <button id="addBtn" class="add-btn">Add Customer</button>
+    <button id="updateBtn" class="update-btn">Update Customer</button>
+    <button id="deleteBtn" class="delete-btn">Delete Customer</button>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<script src="../js/jquery-3.7.1min.js"></script>
+
+<script src="../js/customer.js"></script>
+</body>
+</html>
