@@ -1,1 +1,3 @@
-[Watch on YouTube]([https://www.youtube.com/watch?v=VIDEO_ID](https://youtu.be/7WWWNelzzi0?si=-PSY0xRN5ylsqaIb))
+## Demo Video
+
+[![Watch youtube video](https://img.youtube.com/vi/7WWWNelzzi0/0.jpg)](https://youtu.be/7WWWNelzzi0)
